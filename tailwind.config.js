@@ -14,7 +14,10 @@ module.exports = {
       },
       borderColor: {
         custom: 'rgba(0, 0, 0, 0.30)',
-      }
+      },
+      backgroundImage: {
+        custom: "url('./public/asset/sekolah1.png')",
+      },
     },
   },
   plugins: [],

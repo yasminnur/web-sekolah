@@ -8,49 +8,52 @@
     <title>Document</title>
 </head>
 <body>
-<!-- Berita -->
-<div class="container flex justify-between h-16 mx-auto font-bold pl-28 pb-14 ">
-    <ul class="items-stretch hidden space-x-3 lg:flex bg-transparent">
-        <li class="flex">
-            <a rel="" href="#" class="flex items-center px-4 -mb-1 border-b-2 font-semibold ">Semua</a>
-        </li>
-        <li class="flex">
-            <a rel="" href="#" class="flex items-center px-4 -mb-1 font-semibold">Berita</a>
-        </li>
-        <li class="flex">
-            <a rel="" href="#" class="flex items-center px-4 -mb-1 font-semibold">Pengumuman</a>
-        </li>
-    </ul>
-    <div class="w-[550px] h-[130px] pl-[2px] pr-[200px] pt-1.5 text-sm flex-col items-center text-end  text-green-400">
-        <p class="pt-3">Lihat Semua</p>
+    <header class="py-10 px-4 lg:px-16">
+        <div class="container flex justify-between items-center h-16 mx-auto">
+          <a href="index.html" aria-label="Back to homepage" class="flex items-center p-2">
+            <div class="container mx-auto">
+              <img src="./asset/logo.svg" alt="">
+            </div>
+          </a>
+          <ul class="lg:hidden">
+            <!-- Tampilkan tombol menu seluler -->
+            <li class="flex">
+              <button id="mobile-menu-button" class="p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-gray-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="items-stretch hidden space-x-3 lg:flex bg-transparent">
+            <li class="flex">
+              <a href="#" class="flex items-center px-5 -mb-1 border-b-2 font-semibold">Beranda</a>
+            </li>
+            <li class="flex">
+              <a href="tentangKita.html" class="flex items-center px-5 -mb-1 font-semibold">Tentang Kita</a>
+            </li>
+            <li class="flex">
+              <a href="berita.html" class="flex items-center px-5 -mb-1 font-semibold text-white">Berita</a>
+            </li>
+            <li class="flex">
+              <a href="galeri.html" class="flex items-center px-5 -mb-1 font-semibold text-white">Galeri</a>
+            </li>
+            <li class="flex">
+              <a href="kontak.html" class="flex items-center px-5 -mb-1 font-semibold text-white">Kontak</a>
+            </li>
+          </ul>
+          <div class="items-center flex-shrink-0 hidden lg:flex">
+            <button class="self-center px-8 py-3 font-semibold rounded-full bg-white text-green-600">PPOB</button>
+          </div>
         </div>
-</div>
-<div class="container flex flex-col justify-center mx-auto sm:py-28 lg:py-28 lg:px-6 lg:flex-row">
-<div class="inline-flex gap-[32px] lg:px-28 pt-9 rounded-sm ">
-    <div class="flex flex-col h-[305px] w-[304px] rounded-[16px]">
-      <img src="../public/asset/school1.png" alt="" class="w-full h-[320px] rounded-xl">
-      <div class=" rounded-b-2xl pt-5 pb-9 pl-3 bg-stone-100">
-        <h1 class="font-semibold text-xl">Kegiatan Belajar Mengajar Offline Dimulai</h1>
-        <p class=" py-1">Kegiatan yang adakan saat siswa selesai melakuakan studi sekolah</p>
-    </div>
-    </div>
-
-    <div class="flex flex-col h-[305px] w-[304px] rounded-[16px]">
-        <img src="../public/asset/school1.png" alt="" class="w-full h-[320px] rounded-xl">
-        <div class=" rounded-b-2xl pt-5 pb-9 pl-3 bg-stone-100">
-          <h1 class="font-semibold text-xl">Penampilan Raport Semester Ganjil</h1>
-          <p class=" py-1">Kegiatan yang adakan saat siswa selesai melakuakan studi sekolah</p>
-      </div>
-      </div>
-
-      <div class="flex flex-col h-[305px] w-[304px] rounded-t-2xl">
-        <img src="../public/asset/school3.png" alt="" class="w-full h-[320px]">
-        <div class=" rounded-b-2xl pt-5 pb-9 pl-3 bg-slate-500">
-          <h1 class="font-semibold text-xl ">Jam Belajar Yang Efektif Pada Anak 8 - 12 Tahun</h1>
-          <p class=" py-1">Kegiatan yang adakan saat siswa selesai melakuakan studi sekolah</p>
-      </div>
-      </div>
-  </div>
-</div>
+      </header>
 </body>
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const menu = document.querySelector('.items-stretch');
+  
+    mobileMenuButton.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </html>

@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="font-['Poppins']">
+<body class="font-['Poppins'] overflow-x-hidden">
 
     <!-- NAVBAR -->
     <div class="">
@@ -22,15 +22,15 @@
 
       <nav class="flex h-[72px] justify-between items-center mx-auto px-[80px] text-[16px]">
           <div class="my-[16px]  w-[80px] h-[40px]">
-            <img src="./asset/Vector (1).svg" alt="" />
+            <img src="./asset/logohitam.svg" alt="" />
           </div>
           <!-- <div class=""> -->
             <ul class="flex space-x-7 my-[24px] ">
-              <li><a class="text-[#642ABB] font-semibold" href="home.html">Beranda</a></li>
+              <li><a class="active:text-[#642ABB] hover:text-[#642ABB] active:font-semibold hover:font-semibold" href="home.html">Beranda</a></li>
               <li><a class="active:text-[#642ABB] hover:text-[#642ABB] active:font-semibold hover:font-semibold" href="about.html">Tentang</a></li>
               <li><a class="active:text-[#642ABB] hover:text-[#642ABB] active:font-semibold hover:font-semibold" href="galeri.html">Galeri</a></li>
               <li><a class="active:text-[#642ABB] hover:text-[#642ABB] active:font-semibold hover:font-semibold" href="news.html">Artikel</a></li>
-              <li><a class="active:text-[#642ABB] hover:text-[#642ABB] active:font-semibold hover:font-semibold" href="kontak.html">Kontak</a></li>
+              <li><a class="text-[#642ABB] font-semibold" href="kontak.html">Kontak</a></li>
             </ul>
           <!-- </div> -->
           <!-- <div > -->
@@ -42,36 +42,28 @@
   </div>
 
     <!-- SECTION 1 -->
-    <section id="home" class="pt-[206px] px-[80px]">
-    <!-- Kiri -->
-    <div class="grid grid-cols-2 gap-[137px]">
-      <!-- Bagian Teks -->
-      <div class="col-span-1">
-        <div class="container">
-          <!-- Teks Anda -->
-          <div class="text-color-black duration-300 ease-out non-italic leading-normal font-['Poppins']">
-            <h1 class="font-bold text-[56px]">Tuntut Ilmu Untuk<br>Masa Depan Yang <br>Lebih Baik </h1>
-            <p class="text-[20px] font-[400px]">Jelajahi semua pengetahuan dan ilmu yang berguna bersama <br>kami, untuk kehidupan yang lebih bermanfaat</p>
-          </div>
-          <button class="flex justify-center mt-[40px] gap-[10px] py-[12px] px-[32px] items-center text-white bg-[#F73ECF] rounded-[24px]">Daftar sekarang</button>
+    <section class="mt-[136px] px-[80px]">
+      <div class="grid grid-cols-2 gap-[137px] mb-[80px]">
+      <!-- Kiri -->
+      <div class="col-span-1 w-[660px] mr-[106px]">
+        <div class="text-color-black duration-300 ease-out non-italic leading-normal font-['Poppins']">
+          <h1 class="font-bold text-[56px]">Kontak</h1>
+          <p class="text-[20px] font-[400px]">Hubungi kami untuk mendapatkan informasi lebih lengkap dan jawaban atas pertanyaan anda</p>
         </div>
-      </div>
-      <!-- Bagian Gambar -->
-      <div class="col-span-1">
-        <div class="relative -top-7 translate-x-1/">
-          <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 ">
-            <div class="w-[483px] h-[483px] bg-[#642ABB] rounded-[40px] shrink-0">
-              <div class="absolute flex mt-[44px] -translate-x-1/3 rounded-[16px] bg-[#F9BB50] item-center justify-center p-[8px] w-[80px] h-[80px]"><img src="./asset/piechart.svg" alt="" class="flex items-center justify-center"></div>
-              <div class="absolute flex mt-[364px] -translate-x-3/4 rounded-[16px] bg-[#61DCEA] item-center justify-center p-[8px] w-[80px] h-[80px]"><img src="./asset/book (2).svg" alt="" class="flex items-center justify-center"></div>
-              <div class="absolute flex right-0 mt-[185px] translate-x-1/2 rounded-[16px] bg-[#F63FCF] item-center justify-center p-[8px] w-[80px] h-[80px]"><img src="./asset/pencil.svg" alt="" class="flex items-center justify-center"></div>
-            </div>
-          </span>
-          <img src="./asset/wanita.png" alt="" class="max-w-full mx-auto">
-        </div>
+    </div>
+      <!-- Kanan -->
+      <div class="col-span-1 relative -top-4">
+        <div class=" bg-[#642ABB] w-[483px] h-[483px] rounded-[40px] ">
+        <div class="absolute flex mt-[44px] -translate-x-1/3 top-2 rounded-[16px] bg-[#F63FCF] items-center justify-center p-[8px] w-[80px] h-[80px] z-10"><img src="./asset/pencil.svg" alt="" class="flex items-center justify-center"></div>
+        <div class="absolute flex mt-[364px] -translate-x-[55px] rounded-[16px] bg-[#61DCEA] items-center justify-center p-[8px] w-[80px] h-[80px] z-10"><img src="./asset/book (2).svg" alt="" class="flex items-center justify-center"></div>
+        <div class="absolute flex right-9 mt-[200px] rounded-[16px] bg-[#F9BB50] items-center justify-center p-[8px] w-[80px] h-[80px] z-10"><img src="./asset/piechart.svg" alt="" class="flex items-center justify-center"></div>
+        <div class="w-[483px] h-[483px] bg-custom absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-[40px]"></div>
+        <img src="./asset/wanita4.png" alt="" class="absolute bottom-0 rounded-[40px]">
       </div>
     </div>
+    </div>
   
-  <div class="bg-white w-[1280px] mt-[80px] shadow-custom rounded-[24px] pt-[64px] pb-[72px] px-[40px] mb-[108px]">
+  <div class="bg-white w-[1280px] mt-[80px] shadow-custom rounded-[24px] pt-[64px] pb-[72px] mx-auto px-[40px] mb-[108px]">
     <h1 class="text-[#19245F] font-bold text-[64px] flex justify-center">Kontak Kami</h1>
     <div class="flex flex-row pt-[40px] justify-between ">
         <!-- KIRI -->
@@ -121,59 +113,71 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-[#F8F4FF] text-[#1C2661]">
-	<div class="container px-16  space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
-		<div class="pt-14 grid grid-cols-12 justify-between">
-			<div class=" md:pb-0 md:col-span-6">
-                    <div class="container mx-auto">
-                        <img src="./asset/Vector.svg" alt="">
-                    </div>
-				</a>
-			</div>
-			<div class="col-span-2 text-center md:text-left ">
-				<p class="pb-3 text-lg font-medium">Informasi</p>
-				<ul>
-					<li>
-						<a rel="" href="#" class="text-[#404040] text-sm">Artikel</a>
-					</li>
-					<li>
-						<a rel="" href="#" class="text-[#404040] text-sm">Galeri</a>
-					</li>
-				</ul>
-			</div>
-            <div class="col-span-2 text-center md:text-left">
-				<p class="pb-3 text-lg font-medium">Tentang</p>
-				<ul>
-					<li>
-						<a rel="" href="#" class="text-[#404040] text-sm">Tentang Kami</a>
-					</li>
-					<li>
-						<a rel="" href="#" class="text-[#404040] text-sm">Hubungi Kami</a>
-					</li>
-				</ul>
-			</div>
-			<div class="col-span-2 text-center md:text-left">
-				<p class="pb-3 text-lg font-medium">Ikuti Kami</p>
-				<ul>
-					<li>
-						<span class="inline-flex gap-[8px]"><img class="" src="./asset/facebook.svg" /><a rel="" href="#" class="text-[#404040] text-sm">namasekolah</a></span>
-					</li>
-          <li>
-						<span class="inline-flex gap-[8px]"><img class="" src="./asset/twitter.svg" /><a rel="" href="#" class="text-[#404040] text-sm">namasekolah</a></span>
-					</li>
-          <li>
-						<span class="inline-flex gap-[8px]"><img class="" src="./asset/004-instagram.svg" /><a rel="" href="#" class="text-[#404040] text-sm">namasekolah</a></span>
-					</li>
-				</ul>
-			</div>
-            <div class="col-span-5 text-center md:text-left">
-				<p class="pb-1 text-lg font-normal">Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami, untuk kehidupan yang lebih bermanfaat</p>
-                              
-			</div>
-		</div>
-		<div class="py-6 text-sm text-center dark:text-gray-400">© 1968 Company Co. All rights reserved.</div>
-	</div>
-    </footer>
+    <footer class="bg-[#F8F4FF]">
+      <div class="flex px-[80px] py-[64px] justify-between leading-normal">
+        <!-- KIRI -->
+        <div class="self-stretch">
+          <div class="mb-[24px]">
+            <img src="./asset/logobirdong.svg" alt="">
+        </div>
+        <div class="text-center md:text-left w-[488px]">
+          <p class="text-[20px] text-[#1C2661] font-normal">Jelajahi semua pengetahuan dan ilmu yang berguna bersama kami, untuk kehidupan yang lebih bermanfaat</p>                         
+        </div>
+        </div>
+        <!-- KANAN -->
+        <div class="flex flex-row ">
+          <!-- Informasi -->
+          <div class="text-start">
+            <p class="mb-[20px] mr-[80px] text-[24px] text-[#642ABB] font-semibold">Informasi</p>
+            <ul class="space-y-[20px] text-[#404040] text-[20px]">
+              <li>
+                <a rel="" href="#" class="text-[#404040] text-sm">Artikel</a>
+              </li>
+              <li>
+                <a rel="" href="#" class="text-[#404040] text-sm">Galeri</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Tentang -->
+                <div class="text-start">
+            <p class="mb-[20px] mr-[80px] text-[24px] text-[#642ABB] font-semibold">Tentang</p>
+            <ul class="space-y-[20px] text-[#404040] text-[20px]">
+              <li>
+                <a rel="" href="#" class="text-[#404040] text-sm">Tentang Kami</a>
+              </li>
+              <li>
+                <a rel="" href="#" class="text-[#404040] text-sm">Hubungi Kami</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Ikuti kami -->
+          <div class="text-start ">
+            <p class="mb-[20px] text-[24px] text-[#642ABB] font-semibold">Ikuti Kami</p>
+            <ul class="space-y-[20px] text-[#404040] text-[20px] font-[400px]">
+              <li>
+                <span class="inline-flex gap-[8px] "><img class="" src="./asset/facebook.svg" /><a rel="" href="#" class="text-[#404040] text-sm">namasekolah</a></span>
+              </li>
+              <li>
+                <span class="inline-flex gap-[8px]"><img class="" src="./asset/twitter.svg" /><a rel="" href="#" class="text-[#404040] text-sm">namasekolah</a></span>
+              </li>
+              <li>
+                <span class="inline-flex gap-[8px]"><img class="" src="./asset/004-instagram.svg" /><a rel="" href="#" class="text-[#404040] text-sm">namasekolah</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="grid grid-cols-12 justify-between"> -->
+          <!-- <div class=" md:pb-0 md:col-span-6 bg-emerald-200"> -->
+                        
+            <!-- </a> -->
+          <!-- </div> -->
+          
+                
+        <!-- </div> -->
+      </div>
+      
+      <div class="border-t-[1px] border-[#D3D7DF] py-[32px] text-[#404040] text-[16px] h-[89px] text-center dark:text-gray-400">© 1968 Company Co. All rights reserved.</div>
+        </footer>
 
     
 </body>
